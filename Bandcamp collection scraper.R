@@ -88,7 +88,7 @@ cover_image <- cover_image[-length(cover_image)]
 #The below loop will go through all links (where the images are stored) and download them to a constantly updating destination file
 
 for(i in seq_along(cover_image)){
-  destination <- paste0("C:\\Users\\jerem\\<PathOfInterest>\\Album_", i, ".jpg")
+  destination <- paste0("C:\\Users\\<name>\\<PathOfInterest>\\Album_", i, ".jpg")
   download.file(cover_image[i], destfile = destination, mode = "wb") #Need to download the image as a "wb" as the pictures seem to be binary files
 }
 
