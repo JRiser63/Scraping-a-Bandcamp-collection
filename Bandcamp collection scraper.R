@@ -153,10 +153,6 @@ ggplot(data = grouped_band_count, aes(x = count, y = total_purchases)) +
   geom_point()
 
 
-#Something I did for my collection was label all of the genres (what could be done is instead loop through all pages of every album and pull the tags from those pages to assign genre
-  # , but multiple tags are usually assigned to promote fans from other genres to listen)
-
-
 #Unnesting words####
 unnested_albums <- bc_collection %>%
   unnest_tokens(word, album_clean) %>%
